@@ -1,0 +1,105 @@
+/* style.css */
+
+/* Estilo para o título do formulário */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o botão "Buscar Endereço" */
+#buscarEndereco {
+    margin-top: 10px;
+}
+
+/* Estilo para as labels (rótulos) */
+label {
+    font-weight: bold;
+}
+
+/* Estilo para os campos de entrada (inputs) */
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para o botão "Enviar" */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a classe "required" nas labels */
+.required {
+    color: red;
+    margin-left: 4px;
+}
+
+/* Estilo para o card */
+.card {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o card-header */
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Estilo para o card-body */
+.card-body {
+    padding: 20px;
+}
+
+#medidas{
+    height: 42px; /* Define a altura do menu suspenso */
+  width: 18rem; /* Define a largura do menu suspenso */
+  border: 1px solid #ccc; /* Define uma borda ao redor do menu suspenso */
+  font-size: 16px; /* Define o tamanho da fonte do menu suspenso */
+}
+
+.btn-primary {
+    width: 30px; /* Defina o tamanho desejado aqui */
+    height: 30px; /* Defina o tamanho desejado aqui */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#deleteButton {
+    width: 40px; /* Defina o tamanho desejado aqui */
+    height: 30px; /* Defina o tamanho desejado aqui */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Adicione esta seção de CSS ao seu arquivo style.css */
+
+/* Alinhe o texto à direita das imagens */
+.form-group label {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para as imagens ao lado das labels */
+.form-group label img {
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    max-width: 20px; /* Tamanho máximo das imagens */
+    max-height: 20px;
+}
+
