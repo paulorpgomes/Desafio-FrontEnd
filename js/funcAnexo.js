@@ -1,8 +1,14 @@
 $(document).ready(function () {
-    $("#baixarButton").click(function () {
-        var fileInput = $("#anexo")[0];
-        var file = fileInput.files[0];
+    var fileInput = $("#anexo")[0];
+    var file = null;
 
+    $("#anexo").change(function () {
+        file = fileInput.files[0];
+        var fileName = file ? file.name : '';
+        $("#file-name").text(fileName);
+    });
+
+    $("#baixarButton").click(function (e) {
         if (file) {
             var fileURL = URL.createObjectURL(file);
 
@@ -15,19 +21,15 @@ $(document).ready(function () {
             document.body.removeChild(a);
             URL.revokeObjectURL(fileURL);
         } else {
+            e.preventDefault();
             alert("Nenhum arquivo anexado.");
+
         }
     });
 
     $("#deleteButton").click(function (e) {
         e.preventDefault();
+        file = null;
         $("#file-name").text('');
-    });
-
-    
-
-    $("#anexo").change(function () {
-        var fileName = $("#anexo")[0].files[0].name;
-        $("#file-name").text(fileName);
     });
 });

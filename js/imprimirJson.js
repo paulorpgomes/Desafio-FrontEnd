@@ -18,12 +18,6 @@ $(document).ready(function() {
             pessoaContato: $("#pessoaContato").val(),
             telefone: $("#telefone").val(),
             email: $("#email").val(),
-            produto: $("#produto").val(),
-            unidadeMedida: $("#unidadeMedida").val(),
-            quantidadeEstoque: $("#quantidadeEstoque").val(),
-            valorUnitario: $("#valorUnitario").val(),
-            valorTotal: $("#valorTotal").val(),
-
         };
 
         var jsonInfo = JSON.stringify(fornecedorData, null, 2);
@@ -42,7 +36,6 @@ $(document).ready(function() {
         $("#loadingModal").show();
 
         var fornecedorData = {
-            email: $("#email").val(),
             produto: $("#produto").val(),
             unidadeMedida: $("#unidadeMedida").val(),
             quantidadeEstoque: $("#quantidadeEstoque").val(),

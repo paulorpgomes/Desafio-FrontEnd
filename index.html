@@ -135,12 +135,12 @@
             <div class="card-header bg-primary text-light p-2">
                 Produtos
             </div>
-            <div class="card-body" id="produtoFormatado">
+            <div class="card-body" id="produtoContainer">
                 <div class="row">
                     <div class="col-1">
-                        <a href="#" class="btn btn-danger" id="excluirProduto">
+                        <a href="#" class="btn btn-danger excluirProduto" data-product-id="${newProdutoID}">
                             <img src="img/trash.svg" alt="e" width="20" height="20">
-                        </a>
+                        </a>                        
                     </div>
                     <div class="col-11">
                         <form action="">
@@ -184,11 +184,11 @@
                     </div>
                     
             </div>
-            <div class="d-grid gap-2">
-                <button type="button" class="btn btn-success" id="addProduto">
-                    <i class="fas fa-plus"></i> Adicionar Produto
-                </button>
-            </div>
+        </div>
+        <div class="d-grid gap-2">
+            <button type="button" class="btn btn-success" id="addProduto">
+                <i class="fas fa-plus"></i> Adicionar Produto
+            </button>
         </div>
     </div>
     
