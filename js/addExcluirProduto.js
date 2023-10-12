@@ -70,7 +70,10 @@ $(document).ready(function () {
             </div>
         `;
 
+        
+
         $("#produtoContainer").append(produtoHTML);
+
 
         const $novoProduto = $(`#${newProdutoID}`);
 
@@ -78,6 +81,7 @@ $(document).ready(function () {
             e.preventDefault();
             $novoProduto.remove();
         });
+        
 
         adicionarCalculoValorTotal($novoProduto);
     }

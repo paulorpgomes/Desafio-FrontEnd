@@ -20,6 +20,7 @@ $(document).ready(function () {
             a.click();
             document.body.removeChild(a);
             URL.revokeObjectURL(fileURL);
+            e.preventDefault();
         } else {
             e.preventDefault();
             alert("Nenhum arquivo anexado.");
